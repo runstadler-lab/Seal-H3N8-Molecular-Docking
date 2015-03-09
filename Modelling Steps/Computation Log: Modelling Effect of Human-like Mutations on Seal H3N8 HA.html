@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.0.6 (451290)"/><meta name="keywords" content="Lab Notebook, Project: Seal H3N8"/><meta name="altitude" content="14"/><meta name="author" content="Eric Ma"/><meta name="created" content="2015-02-21 19:11:25 +0000"/><meta name="latitude" content="42.35562170827166"/><meta name="longitude" content="-71.10205121664676"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2015-03-09 15:03:57 +0000"/><title>Computation Log: Modelling Effect of Human-like Mutations on Seal H3N8 HA</title></head><body>
+<div><b>Background:</b></div>
+<div>With the new analysis of seal H3N8 released, I have decided to check the effect of the mutations that I suggested that Islam try out, based on an analysis of the receptor binding pocket.</div>
+<div><br/></div>
+<div><b>Data:</b></div>
+<div>I downloaded 4WA2 from the RSCB PDB, for the following reasons:</div>
+<ol>
+<li>It is the seal HA structure published in Yang et. al. (JVI, 2015)</li>
+<li>It has 3-SLN (Glyko® 3'-Sialyl-N-acetyllactosamine (3'-SLN),</li>
+<li style="display:inline;list-style:none;">
+<ol>
+<li>chemical form (copied from <a href="http://www.prozyme.com/product_details.html?key=GKAD-01014">http://www.prozyme.com/product_details.html?key=GKAD-01014</a>)</li>
+<li><span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Helvetica;"><img src="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/564C785B-1CB6-4BF6-B3B2-1300718D13EA.gif" height="150" width="499"/></span></li>
+<li><span style="font-family: Helvetica;">This has an alpha(2,3) form.</span></li>
+</ol>
+</li>
+</ol>
+<div>FASTA file: <a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2.fasta.txt">4WA2.fasta.txt</a></div>
+<div>PDB file: <a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2.pdb">4WA2.pdb</a></div>
+<div><br/></div>
+<div><b>Analysis Steps:</b></div>
+<div>Firstly, I made sure that the 4WA2 sequence is the same as the Seal H3N8 sequence that I have on hand. I did this quick-and-dirty by using Clustal Omega on <a href="http://www.ebi.ac.uk/Tools/msa/clustalo/">EMBL-EBI</a>. </div>
+<div><br/></div>
+<div>Sequence 1: 4WA2 Chain A</div>
+<div>Sequence 2: Seal H3N8 from this <a href="evernote:///view/212936/s3/448ceed7-322c-4752-abc0-340b44da4d26/448ceed7-322c-4752-abc0-340b44da4d26/">note</a>.</div>
+<div><br/></div>
+<div>Alignment result: The alignment is perfect. See PDF below:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2%20and%20Seal%20H3N8.pdf">4WA2 and Seal H3N8.pdf</a></div>
+<div><br/></div>
+<div>Next, I took the 4WA2 protein sequence, and made the following mutations:</div>
+<div><input checked="true" type="checkbox"/>G225D<a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_G225D.txt">4WA2_G225D.txt</a></div>
+<div><input checked="true" type="checkbox"/>Q226I<a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_Q226I.txt">4WA2_Q226I.txt</a></div>
+<div><input checked="true" type="checkbox"/>G228S<a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_G228S.txt">4WA2_G228S.txt</a></div>
+<div><input checked="true" type="checkbox"/>G225D, Q226I<a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_G225D-Q226I.txt">4WA2_G225D-Q226I.txt</a></div>
+<div><input checked="true" type="checkbox"/>G225D, G228S<a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_G225D-G228S.txt">4WA2_G225D-G228S.txt</a></div>
+<div><input checked="true" type="checkbox"/>Q226I, G228S<a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_Q226I-G228S.txt">4WA2_Q226I-G228S.txt</a></div>
+<div><input checked="true" type="checkbox"/>G225D, Q226I, G228S<a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_G225D-Q226I-G228S.txt">4WA2_G225D-Q226I-G228S.txt</a></div>
+<div><br/></div>
+<div>I submitted all of these sequences to SwissModel for homology modeling using 4WA2 as the template file.</div>
+<div><br/></div>
+<div>When searching for the mutations, note that the atom numbering changes.</div>
+<ul>
+<li>225 is now 217.</li>
+<li>226 is now 218.</li>
+<li>228 is now 220.</li>
+</ul>
+<div>To show ligands, do S —&gt; organic —&gt; sticks</div>
+<div><br/></div>
+<div>The current logic behind my current analysis is as such: If SwissModel is able to model in the ligand at the positions that are mutated, then that means there were no clashes between the sugar molecule and the amino acid side chains in the receptor binding site. This would indicate that the mutation would not be important for a receptor binding specificity switch from alpha(2,3) to alpha(2,6). Vice versa.</div>
+<div><br/></div>
+<div>The mutations in 226 and 228 did not permit the sugar molecule to be modelled in. This suggests that they may allow for alpha(2,6) glycans in there, but I will need to test this by actual molecular docking.</div>
+<div><br/></div>
+<div>Next up, I followed the AutoDock Vina tutorial video’s instructions to prepare PDBQT files for docking, including configuration files. They are currently located in the /Users/ericmjl/vina_modelling folder.</div>
+<div><br/></div>
+<div>I have put the log files recording the binding affinity scores in the table below.</div>
+<table style="-evernote-table:true;border-collapse:collapse;margin-left:0px;table-layout:fixed;width:100%;">
+<tr>
+<td style="border: 1px solid rgb(219, 219, 219); padding: 10px; margin: 0px;width:18.948521358159912%;">
+<div>Structure</div>
+</td>
+<td style="border: 1px solid rgb(219, 219, 219); padding: 10px; margin: 0px;width:37.897042716319824%;">
+<div>3SLN</div>
+</td>
+<td style="border: 1px solid rgb(219, 219, 219); padding: 10px; margin: 0px;width:43.04490690032859%;">
+<div>6SLN</div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>4WA2</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_3SLN_1.txt">4WA2_3SLN_1.txt</a><br/></div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_6SLN_1.txt">4WA2_6SLN_1.txt</a><br/></div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>G225D</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G225D_3SLN.txt">G225D_3SLN.txt</a><br/></div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G225D_6SLN.txt">G225D_6SLN.txt</a><br/></div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Q226I</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_3SLN.txt">Q226I_3SLN.txt</a><br/></div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_6SLN_1.txt">Q226I_6SLN_1.txt</a><br/></div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>G228S</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G228S_3SLN_1.txt">G228S_3SLN_1.txt</a><br/></div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G228S_6SLN_1.txt">G228S_6SLN_1.txt</a><br/></div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>G225D_Q226I</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G225D_Q226I_3SLN.txt">G225D_Q226I_3SLN.txt</a><br/></div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G225D_Q226I_6SLN.txt">G225D_Q226I_6SLN.txt</a><br/></div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>G225D_G228S</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G225D_G228S_3SLN.txt">G225D_G228S_3SLN.txt</a><br/></div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G225D_G228S_6SLN.txt">G225D_G228S_6SLN.txt</a><br/></div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Q226I_G228S</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_G228S_3SLN.txt">Q226I_G228S_3SLN.txt</a><br/></div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_G228S_6SLN_1.txt">Q226I_G228S_6SLN_1.txt</a><br/></div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>G225D_Q226I_G228S</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G225D_Q226I_G228S_3SLN.txt">G225D_Q226I_G228S_3SLN.txt</a><br/></div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G225D_Q226I_G228S_6SLN.txt">G225D_Q226I_G228S_6SLN.txt</a><br/></div>
+</td>
+</tr>
+</table>
+<div><br/></div>
+<div>A quick check of 4WA2-3SLN against the original 4WA2 structure showed that 4WA2-3SLN was incorrectly docked. I will have to change the grid size to (10, 12, 10), and changed the grid centre to (-36.333, 37.111, 19.000). This will be done on Monday.</div>
+<div><br/></div>
+<div>02 March 2015 9:35:AM</div>
+<div>Here we go with the new round of molecular docking! Based on the last round of molecular docking, I found that 3-SLN was not docked correctly into 4WA2. This may have to do with the overly-broad search space given to the program. I have narrowed the search space down, and this time, I have saved the configuration files used for each molecule.</div>
+<div><br/></div>
+<div>I learned that the 4WA2-3SLN was not docked correctly, because I did not do the following:</div>
+<ol>
+<li>Remove ligand from 4WA2 molecule (use UCSF Chimera to do this).</li>
+<li>Remove solvent molecules (in UCSF Chimera)</li>
+<li>Made all ligand bonds non-rotatable (in Autodock Tools)</li>
+</ol>
+<div><br/></div>
+<div>For the rest of the homology models of the single point mutants, I only had to do the following:</div>
+<ol>
+<li>Add polar hydrogens (in Autodock Tools)</li>
+</ol>
+<div><br/></div>
+<table style="-evernote-table:true;border-collapse:collapse;margin-left:0px;table-layout:fixed;width:100%;">
+<tr>
+<td style="border: 1px solid rgb(219, 219, 219); padding: 10px; margin: 0px;width:19.386637458926614%;">
+<div>Structure</div>
+</td>
+<td style="border: 1px solid rgb(219, 219, 219); padding: 10px; margin: 0px;width:37.78751369112815%;">
+<div>3SLN</div>
+</td>
+<td style="border: 1px solid rgb(219, 219, 219); padding: 10px; margin: 0px;width:42.716319824753555%;">
+<div>6SLN</div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>4WA2</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Config:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/conf_4WA2_3SLN.txt">conf_4WA2_3SLN.txt</a></div>
+<div><br/></div>
+<div>Report:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_3SLN.txt">4WA2_3SLN.txt</a></div>
+<div><br/></div>
+<div>Best Structure:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_3SLN.pdbqt">4WA2_3SLN.pdbqt</a></div>
+<div><br/></div>
+<div>Affinity: -7.1 kcal/mol</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Config:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/conf_4WA2_6SLN.txt">conf_4WA2_6SLN.txt</a></div>
+<div><br/></div>
+<div>Report:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_6SLN.txt">4WA2_6SLN.txt</a></div>
+<div><br/></div>
+<div>Best Structure:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/4WA2_6SLN.pdbqt">4WA2_6SLN.pdbqt</a></div>
+<div><br/></div>
+<div>Affinity: -6.7 kcal/mol</div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Q226I_G228S</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Config:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/conf_Q226I_G228S_3SLN.txt">conf_Q226I_G228S_3SLN.txt</a></div>
+<div><br/></div>
+<div>Report:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_G228S_3SLN_1.txt">Q226I_G228S_3SLN_1.txt</a><br/></div>
+<div><br/></div>
+<div>Best Structure:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_G228S_3SLN.pdbqt">Q226I_G228S_3SLN.pdbqt</a><br/></div>
+<div><br/></div>
+<div>Affinity: -5.4 kcal/mol</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Config:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/conf_Q226I_G228S_6SLN.txt">conf_Q226I_G228S_6SLN.txt</a></div>
+<div><br/></div>
+<div>Report:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_G228S_6SLN.txt">Q226I_G228S_6SLN.txt</a><br/></div>
+<div><br/></div>
+<div>Best Structure:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_G228S_6SLN.pdbqt">Q226I_G228S_6SLN.pdbqt</a><br/></div>
+<div><br/></div>
+<div>Affinity: -7.2 kcal/mol</div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Q226I</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Config:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/conf_Q226I_3SLN.txt">conf_Q226I_3SLN.txt</a></div>
+<div><br/></div>
+<div>Report:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_3SLN_1.txt">Q226I_3SLN_1.txt</a></div>
+<div><br/></div>
+<div>Best Structure:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_3SLN.pdbqt">Q226I_3SLN.pdbqt</a></div>
+<div><br/></div>
+<div>Affinity: -6.2 kcal/mol</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Config:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/conf_Q226I_6SLN.txt">conf_Q226I_6SLN.txt</a></div>
+<div><br/></div>
+<div>Report:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_6SLN.txt">Q226I_6SLN.txt</a></div>
+<div><br/></div>
+<div>Best Structure:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Q226I_6SLN.pdbqt">Q226I_6SLN.pdbqt</a></div>
+<div><br/></div>
+<div>Affinity: -6.1 kcal/mol</div>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>G228S</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Config:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/conf_G228S_3SLN.txt">conf_G228S_3SLN.txt</a></div>
+<div><br/></div>
+<div>Report:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G228S_3SLN.txt">G228S_3SLN.txt</a></div>
+<div><br/></div>
+<div>Best Structure:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G228S_3SLN.pdbqt">G228S_3SLN.pdbqt</a></div>
+<div><br/></div>
+<div>Affinity: -6.4 kcal/mol</div>
+</td>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:33.33%;">
+<div>Config:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/conf_G228S_6SLN.txt">conf_G228S_6SLN.txt</a></div>
+<div><br/></div>
+<div>Report:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G228S_6SLN.txt">G228S_6SLN.txt</a></div>
+<div><br/></div>
+<div>Best Structure:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/G228S_6SLN.pdbqt">G228S_6SLN.pdbqt</a></div>
+<div><br/></div>
+<div>Affinity: -6.3 kcal/mol</div>
+</td>
+</tr>
+</table>
+<div><br/></div>
+<div><b>Interpretation:</b></div>
+<div>Binding affinity energies indicate how good the ligand will bind inside the designated receptor binding pocket. I first showed that the docking program will re-capitulate 3-SLN binding in 4WA2 properly, with a rigid ligand that does not rotate around any of its chemical bonds. With the same rigid configuration for 6-SLN obtained from 4KON, I show that it will bind more favourably to the Q226I-G228S mutated seal protein. As expected as well, single-mutated proteins have only intermediate binding affinities ~6.2-6.4 kcal/mol.</div>
+<div><br/></div>
+<div>Based on the data, I have made the following structural models:</div>
+<div>3-SLN in 4WA2</div>
+<div><img src="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/fig.4WA2_3SLN_modeled+original.png" height="668" width="485"/></div>
+<div><br/></div>
+<div>6-SLN in Q226I-G228S-mutant model</div>
+<div><img src="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/fig.Q226IG228S_6SLN_modeled.png" height="668" width="485"/></div>
+<div><br/></div>
+<div>Bar charts are as such:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Binding%20Affinities%20Ka.pdf">Binding Affinities Ka.pdf</a><br/></div>
+<div>Made entirely in the following IPython notebook:</div>
+<div><a href="Computation%20Log%3A%20Modelling%20Effect%20of%20Human-like%20Mutations%20on%20Seal%20H3N8%20HA.resources/Binding%20Energies%20Bar%20Charts.ipynb">Binding Energies Bar Charts.ipynb</a><br/></div>
+</body></html>
