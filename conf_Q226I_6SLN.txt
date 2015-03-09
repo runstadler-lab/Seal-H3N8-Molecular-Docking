@@ -1,0 +1,14 @@
+receptor = Q226I.pdbqt
+ligand = 6SLN.pdbqt
+
+out = Q226I_6SLN.pdbqt
+
+log = Q226I_6SLN.txt
+
+center_x = -37.216
+center_y = 38.272
+center_z = 21.186
+
+size_x = 10
+size_y = 12
+size_z = 12

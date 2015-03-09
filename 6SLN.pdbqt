@@ -1,0 +1,46 @@
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK       I    between atoms: C1_3964  and  C2_3965 
+REMARK       I    between atoms: C2_3965  and  O6_3995 
+REMARK       I    between atoms: C5_3968  and  N5_3975 
+REMARK       I    between atoms: C6_3969  and  C7_3970 
+REMARK       I    between atoms: C7_3970  and  C8_3971 
+REMARK       I    between atoms: C8_3971  and  C9_3972 
+REMARK       I    between atoms: C10_3973  and  N5_3975 
+REMARK       I    between atoms: C5_3988  and  C6_3989 
+REMARK       I    between atoms: C6_3989  and  O6_3995 
+ROOT
+HETATM    1  C1  SIA A 603     -27.038   0.263 -13.738  1.00 97.87     0.240 C 
+HETATM    2  C2  SIA A 603     -26.438   0.862 -12.484  1.00108.65     0.271 C 
+HETATM    3  C3  SIA A 603     -27.059  -0.132 -11.688  1.00101.59     0.103 C 
+HETATM    4  C4  SIA A 603     -26.666  -1.507 -11.766  1.00 97.89     0.182 C 
+HETATM    5  C5  SIA A 603     -25.230  -1.751 -11.454  1.00 90.71     0.166 C 
+HETATM    6  C6  SIA A 603     -24.406  -0.813 -12.262  1.00 94.22     0.176 C 
+HETATM    7  C7  SIA A 603     -23.044  -0.723 -11.922  1.00 95.96     0.214 C 
+HETATM    8  C8  SIA A 603     -22.412   0.409 -12.780  1.00 95.66     0.218 C 
+HETATM    9  C9  SIA A 603     -20.879   0.354 -12.775  1.00 86.65     0.218 C 
+HETATM   10  C10 SIA A 603     -23.837  -3.913 -11.080  1.00 85.31     0.252 C 
+HETATM   11  C11 SIA A 603     -23.586  -5.361 -11.462  1.00 84.13     0.100 C 
+HETATM   12  N5  SIA A 603     -24.915  -3.154 -11.769  1.00 87.90    -0.235 NA
+HETATM   13  O1A SIA A 603     -26.243  -0.112 -14.686  1.00 89.45    -0.644 OA
+HETATM   14  O1B SIA A 603     -28.287   0.154 -13.893  1.00 90.16    -0.644 OA
+HETATM   15  O4  SIA A 603     -27.517  -2.348 -10.969  1.00 93.58    -0.221 OA
+HETATM   16  O6  SIA A 603     -25.085   0.548 -12.011  1.00 96.74    -0.325 OA
+HETATM   17  O7  SIA A 603     -22.868  -0.407 -10.575  1.00 91.80    -0.218 OA
+HETATM   18  O8  SIA A 603     -22.871   0.408 -14.096  1.00 85.38    -0.218 OA
+HETATM   19  O9  SIA A 603     -20.202   1.537 -13.016  1.00 87.88    -0.218 OA
+HETATM   20  O10 SIA A 603     -23.128  -3.375 -10.197  1.00 89.96    -0.271 OA
+HETATM   21  C1  GAL A 604     -28.468   5.901 -10.727  1.00159.95     0.303 C 
+HETATM   22  C2  GAL A 604     -27.810   7.002 -11.538  1.00158.93     0.244 C 
+HETATM   23  C3  GAL A 604     -27.619   6.597 -12.996  1.00146.87     0.220 C 
+HETATM   24  C4  GAL A 604     -26.852   5.284 -13.115  1.00134.70     0.215 C 
+HETATM   25  C5  GAL A 604     -27.427   4.248 -12.148  1.00131.58     0.180 C 
+HETATM   26  C6  GAL A 604     -26.466   3.063 -11.961  1.00107.43     0.178 C 
+HETATM   27  O1  GAL A 604     -28.505   6.281  -9.363  1.00171.21    -0.187 OA
+HETATM   28  O2  GAL A 604     -28.636   8.149 -11.479  1.00162.93    -0.215 OA
+HETATM   29  O3  GAL A 604     -26.931   7.620 -13.668  1.00139.56    -0.218 OA
+HETATM   30  O4  GAL A 604     -25.484   5.481 -12.830  1.00132.79    -0.218 OA
+HETATM   31  O5  GAL A 604     -27.624   4.788 -10.852  1.00150.70    -0.324 OA
+HETATM   32  O6  GAL A 604     -27.207   1.863 -11.791  1.00103.62    -0.324 OA
+ENDROOT
+TORSDOF 8
